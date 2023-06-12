@@ -162,7 +162,7 @@ export default function Login() {
         },
       };
       const { data } = await axios.post(
-        "https://sigma-chat-895v.onrender.com/api/user/login",
+        "/api/user/login",
         {
           email,
           password,

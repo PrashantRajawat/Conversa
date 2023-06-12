@@ -20,7 +20,10 @@ const MyChats = () => {
         },
       };
 
-      const { data } = await axios.get("/api/chat", config);
+      const { data } = await axios.get(
+        "http://localhost:3000/api/chat",
+        config
+      );
       console.log("data of my chat", data);
       if (!chats.find((c) => c._id === data._id)) setChats([data, ...chats]);
       setChats(data);

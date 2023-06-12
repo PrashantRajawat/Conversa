@@ -20,7 +20,7 @@ import ScrollableChat from "./ScrollableChat";
 import animationData from "../animations/typing.json";
 import "./style.css";
 import io from "socket.io-client";
-const ENDPOINT = "https://sigma-chat-895v.onrender.com/";
+const ENDPOINT = "http://localhost:3000/";
 var socket, selectedChatCompare;
 const SingleChat = ({ fetchAgain, setFetchAgain }) => {
   const [messages, setMessages] = useState([]);
